@@ -1,0 +1,315 @@
+@charset "UTF-8";
+
+/* sprite */
+.icon-logo{width: 140px; height: 30px; background-position: 0 -150px;}
+
+
+/* header */
+.center{
+    margin: 0;
+    position: relative;
+}
+.btn-area{display: none;}
+.notice{display: none;}
+header{
+    top: 0; 
+    height: 50px;
+}
+header h1{height: 50px;}
+header h1 a{
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%,-50%);
+}
+.m-btn-area{display: block;}
+.m-btn-area *{
+    position: absolute;
+    display: block;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.m-btn-area i{right: 20px;}
+.gnb>ul>li>ul li a{
+    text-align: left;
+    padding: 0 25px;
+}
+.gnb>ul>li> ul li a:hover{
+    color: #fff; 
+    text-decoration: underline;
+}
+.gnb>ul>li>a{line-height: 40px;}
+.gnb{
+    position: fixed;
+    top:0; 
+    left:-250px;
+    width: 250px; 
+    height: 100%;
+    background: #2c2a29;
+    transition: left 0.5s;
+}
+.gnb.open{left:0;}
+.gnb.open::before{
+    content: '';
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.gnb{padding-left: 0;}
+.gnb>ul{
+    height: auto; 
+    display: block;
+}
+.gnb>ul>li{float: none;}
+.gnb>ul>li>a{
+    color: #a7a7a7; 
+    padding: 0 10px;
+}
+.gnb>ul>li>a.active{border-bottom: 1px solid #eee;}
+.gnb>ul>li>ul{
+    position: relative; 
+    border-bottom: 1px solid #eee; 
+    padding: 0;
+}
+.gnb>ul>li>ul li{line-height: 35px;}
+.gnb>ul>li>ul li a{
+    display: block; 
+    font-size: 14px; 
+    margin-bottom: 0;
+}
+.gnb i{
+    position: absolute; 
+    right: -40px; 
+    top: 15px;
+    display: block;
+    font-size: 20px;
+}
+
+
+
+/* 메인슬라이드 */
+.main-slide{
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+.main-slide .slide img:first-child{display: none;}
+.main-slide .slide img:nth-child(2){
+    display: block; 
+    width: 100%;
+}
+.main-slide.close{padding-top: 0;}
+.swiper-container-horizontal>.swiper-pagination-bullets, 
+.swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 20px;
+    left: 20px;
+    width: 40px;
+    height: 20px;
+    border-radius: 5px;
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+
+/* 신상품 */
+.new-slide{display: none;}
+.new-mo{
+    display: block;
+    margin-bottom: 120px;
+    position: relative;
+}
+.new-mo h2{
+    font-size: 18px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.new-mo .wrap{
+    text-align: center;
+    margin: 20px 20px; 
+    padding-bottom: 30px;
+}
+.new-mo li:nth-child(2n-1) .wrap{
+    margin-right: 10px;
+}
+.new-mo li:nth-child(2n) .wrap{
+    margin-left: 10px;
+}
+.new-mo ul{overflow: hidden;}
+.new-mo li{
+    float: left; 
+    width: 50%;
+}
+.new-mo li img{width: 100%;}
+.new-mo dl{text-align: center;}
+.new-mo dt{
+    font-size: 12px; 
+    padding: 5px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.new-mo dd{
+    font-size: 12px; 
+    font-weight: bold;
+}
+.new-mo button{
+    width: 90px; 
+    height: 35px;
+    border: 1px solid #666;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #666;
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+    bottom: -40px;
+}
+.new-mo li{display: none;}
+
+
+
+/* 베스트상품 */
+.best-mo{
+    display: block; 
+    padding-bottom: 120px;
+}
+.best-product{display: none;}
+.best-mo h2{
+    font-size: 18px;
+    padding: 50px;
+    text-align: center;
+}
+.best-mo img{width: 100%;}
+.best-mo .tab-nav ul{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.best-mo .tab-nav li{
+    font-size: 12px;
+    font-weight: bold;
+    border: 2px solid #000;
+    height: 20px;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0 10px;
+}
+.best-mo .tab-nav li.on{background: #000;}
+.best-mo .tab-nav li.on a{color: #fff;}
+.best-mo .slide{padding: 0 20px;}
+.best-mo .tab-contents>div{
+    visibility: hidden; 
+    height: 0;
+}
+.best-mo .tab-contents>div.on{
+    visibility: visible; 
+    height: auto;
+}
+.best-mo .tab-contents dl{
+    text-align: center; 
+    font-size: 12px;
+}
+.best-mo .tab-contents dd{
+    font-weight: bold;
+    font-size: 14px;
+}
+.best-mo .tab-contents dt{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+/* 동영상 */
+.video{padding: 80px 0;}
+.video .bg{background: #f5f5f5;}
+.video .wrap{
+    height: 380px;
+}
+.video .wrap iframe{
+    position: absolute; 
+    top: 130px;
+    left: 50%; 
+    transform: translateX(-50%);
+}
+.video .wrap .videop{display: none;}
+.video .wrap .mvideop{display: block;}
+.video .wrap .pcvideo{display: none;}
+.video .wrap .movideo{display: block;}
+.video .wrap p{
+    position: absolute;
+    top: 40px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    font-size: 18px; 
+    font-weight: 700;
+    text-align: center; 
+    color: #666;
+}
+
+
+/* sns */
+.insta-mo{
+    display: block; 
+    padding-bottom: 100px;
+}
+.insta-slide{display: none;}
+.insta-mo h2{
+    font-size: 18px; 
+    text-align: center;
+    padding: 5px 0;
+}
+.insta-mo h3{
+    font-size: 16px; 
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 50px;
+}
+.insta-mo img{width: 100%;}
+
+
+/* footer */
+.footpc{display: none;}
+.footmo{
+    display: block;
+    height: auto; 
+    padding: 0 20px 50px 20px;
+    background: #000; 
+    color: #fff;
+    margin:0 auto; 
+    text-align:center;
+}
+.footmo .ect-nav ul{
+    padding: 20px 0; 
+    text-align: center; 
+}
+.footmo .ect-nav ul li{display: inline-block;}
+.footmo .ect-nav ul li a{
+    color: #fff; 
+    font-size: 12px; 
+    font-weight: bold;
+}
+.footmo .ect-nav ul li a{
+    font-size: 10px; 
+    font-weight: normal; 
+    padding: 0 5px;
+}
+.footmo .ect-nav ul li:first-child a{padding-left: 0;}
+.footmo .ect-nav ul li:last-child a{padding-right: 0;}
+.footmo .cs{padding:10px 0 30px 0;}
+.footmo .cs .head{
+    font-size: 18px; 
+    font-weight: bold;
+}
+.footmo .cs .tel{
+    padding: 10px 0; 
+    font-size: 22px;
+}
+.footmo .cs ul li{font-size: 12px;}
+.footmo address{
+    font-size: 10px; 
+    font-style: normal;
+    padding-bottom: 20px;
+}
+.footmo small{font-size: 10px;}
