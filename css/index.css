@@ -264,6 +264,7 @@ header h1 a{
     left: 0; 
     top: 50%; 
     transform: translateY(-50%);
+    border: 0;
 }
 .video .wrap p{
     position: absolute;
