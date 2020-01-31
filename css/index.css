@@ -11,12 +11,9 @@ button{border:none; background: none; cursor: pointer; outline: none;}
 li{list-style: none;}
 input{outline: none;}
 
+
 /* sprite */
-.icon{
-    display: inline-block;
-    background-image: url(../img/sprite.png);
-    background-repeat: no-repeat;
-}
+.icon{display: inline-block; background-image: url(../img/sprite.png); background-repeat: no-repeat;}
 .icon-logo{width: 200px; height: 40px; background-position: 0 0;}
 .icon-close{width: 20px; height: 20px; background-position: -300px 0;}
 .icon-up{width: 14px; height: 14px; background-position: -400px 0;}
@@ -24,6 +21,7 @@ input{outline: none;}
 .icon-left{width: 36px; height: 36px; background-position: -500px 0;}
 .icon-right{width: 36px; height: 36px; background-position: -600px 0;}
 .icon-smalldown{width: 12px; height: 8px; background-position: -700px 0;}
+
 
 
 /* 배너 */
@@ -58,15 +56,23 @@ header {
     background: #fff; 
     transition: 0.5s;
 }
-header.close{top: 0;}
-.m-btn-area{display: none;}
+header.close{
+    top: 0;
+}
+.m-btn-area{
+    display: none;
+}
 header h1 a{
     position: absolute; 
     top: 50%; 
     transform: translateY(-50%);
 }
-.mgnb{display: none;}
-.gnb{padding-left: 270px;}
+.mgnb{
+    display: none;
+}
+.gnb{
+    padding-left: 270px;
+}
 .gnb>ul{
     height: 70px; 
     display: inline-block; 
@@ -95,8 +101,12 @@ header h1 a{
     font-size: 14px;
     text-align: center;
 }
-.gnb i{display: none;}
-.gnb>ul>li> ul li{line-height: 30px;}
+.gnb i{
+    display: none;
+}
+.gnb>ul>li> ul li{
+    line-height: 30px;
+}
 .gnb>ul>li> ul li a{
     display: inline-block; 
     margin-bottom: 10px; 
@@ -117,6 +127,7 @@ header h1 a{
 }
 
 
+
 /* 검색/로그인 */
 .btn-area{
     position: absolute; 
@@ -130,13 +141,16 @@ header h1 a{
 }
 
 
+
 /* 메인슬라이드 */
 .main-slide{
     padding-top: 155px; 
     padding-bottom: 155px; 
     transition: 0.5s;
 }
-.main-slide.close{padding-top: 70px;}
+.main-slide.close{
+    padding-top: 70px;
+}
 .main-slide .swiper-slide-active img{
     position: relative; 
     left:50%; 
@@ -155,24 +169,35 @@ header h1 a{
 }
 
 
+
 /* 신상품 */
-.new-mo{display: none;}
-.new-slide{padding-bottom: 200px;}
+.new-mo{
+    display: none;
+}
+.new-slide{
+    padding-bottom: 200px;
+}
 .new-slide h2{
     text-align: center; 
     padding-bottom: 80px;
     font-size: 32px; 
     font-weight: bold;
 }
-.new-slide .wrap img{transition: 0.5s;}
+.new-slide .wrap img{
+    transition: 0.5s;
+}
 .new-slide .slide .arrow{
     position: absolute; 
     background: none;
     top:50%; 
     transform: translateY(-50%);
 }
-.new-slide .swiper-button-next{right: 0;}
-.new-slide .swiper-button-prev{left: 0;}
+.new-slide .swiper-button-next{
+    right: 0;
+}
+.new-slide .swiper-button-prev{
+    left: 0;
+}
 .new-slide .swiper-container{
     width: 90%; 
     height: 400px;
@@ -190,24 +215,35 @@ header h1 a{
 .new-slide .wrap a{
     position: relative;
 }
-.new-slide .wrap a img.off, .new-slide .wrap a img.on{position: absolute;}
+.new-slide .wrap a img.off, .new-slide .wrap a img.on{
+    position: absolute;
+}
 .new-slide .wrap a img.on{
     opacity: 0;
     transition: opacity 1s;
 }
-.new-slide .wrap a img.on:hover{opacity: 1;}
+.new-slide .wrap a img.on:hover{
+    opacity: 1;
+}
+
 
 
 /* 베스트상품 */
-.best-mo{display: none;}
-.best-product{padding-bottom: 260px;}
+.best-mo{
+    display: none;
+}
+.best-product{
+    padding-bottom: 260px;
+}
 .best-product h2{
     text-align: center; 
     padding-bottom: 40px;
     font-size: 32px; 
     font-weight: bold;
 }
-.best-product .tab-nav{position: relative;}
+.best-product .tab-nav{
+    position: relative;
+}
 .best-product .tab-nav ul{
     overflow: hidden; 
     position: absolute;
@@ -227,9 +263,15 @@ header h1 a{
     display: block; 
     font-size: 20px;
 }
-.best-product .tab-nav li.on{background: #000;}
-.best-product .tab-nav li.on a{color: #fff;}
-.best-product .tab-contents{padding-top: 100px;}
+.best-product .tab-nav li.on{
+    background: #000;
+}
+.best-product .tab-nav li.on a{
+    color: #fff;
+}
+.best-product .tab-contents{
+    padding-top: 100px;
+}
 .best-product .tab-contents ul{
     overflow: hidden; 
     text-align: center;
@@ -238,10 +280,18 @@ header h1 a{
     float: left; 
     padding-right: 10px;
 }
-.best-product .tab-contents li:last-child{padding-right: 0;}
-.best-product .tab-contents div{display: none;}
-.best-product .tab-contents div.on{display: block;}
-.best-product .tab-contents dl{padding-top: 15px;}
+.best-product .tab-contents li:last-child{
+    padding-right: 0;
+}
+.best-product .tab-contents div{
+    display: none;
+}
+.best-product .tab-contents div.on{
+    display: block;
+}
+.best-product .tab-contents dl{
+    padding-top: 15px;
+}
 .best-product .tab-contents dl dd{
     padding-top: 10px; 
     font-weight: bold;
@@ -249,10 +299,15 @@ header h1 a{
 
 
 /* 비디오 */
-.video{padding-bottom: 200px;}
-.mvideop{display: none;}
-.movideo{display: none;}
-.video .bg{background: #f5f5f5;}
+.video{
+    padding-bottom: 200px;
+}
+.mvideop, .movideo{
+    display: none;
+}
+.video .bg{
+    background: #f5f5f5;
+}
 .video .wrap{
     position: relative; 
     max-width: 1200px; 
@@ -279,8 +334,12 @@ header h1 a{
 
 
 /* sns */
-.insta-mo{display: none;}
-.insta-slide{padding-bottom: 250px;}
+.insta-mo{
+    display: none;
+}
+.insta-slide{
+    padding-bottom: 250px;
+}
 .insta-slide h2{
     text-align: center;
     font-size: 32px; 
@@ -297,11 +356,15 @@ header h1 a{
     width: 240px; 
     height: 240px;
 }
-.insta-slide .swiper-container{width: 1200px;}
+.insta-slide .swiper-container{
+    width: 1200px;
+}
 
 
 /* .footer */
-.footmo{display: none;}
+.footmo{
+    display: none;
+}
 .footpc{
     background: #000; 
     color: #fff; 
@@ -311,22 +374,30 @@ header h1 a{
     overflow: hidden; 
     padding: 35px 0;
 }
-.footpc .ect-nav ul li{float: left;}
+.footpc .ect-nav ul li{
+    float: left;
+}
 .footpc .ect-nav ul li a{
     color: #fff; 
     padding: 0 15px;
     font-size: 14px; 
     font-weight: bold;
 }
-.footpc .ect-nav ul li:first-of-type a{padding-left: 0;}
+.footpc .ect-nav ul li:first-of-type a{
+    padding-left: 0;
+}
 .footpc address{
     font-style: normal; 
     font-size: 12px;
     line-height: 25px; 
     padding-top: 15px;
 }
-.footpc small{font-size: 12px;}
-.footpc .head{padding: 10px 0;}
+.footpc small{
+    font-size: 12px;
+}
+.footpc .head{
+    padding: 10px 0;
+}
 .footpc .cs{
     position: absolute; 
     bottom: 0; 
