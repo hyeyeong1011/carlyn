@@ -114,10 +114,10 @@ header h1 a{
     padding-top: 50px;
     padding-bottom: 120px;
 }
-.main-slide .slide img:first-child{
+.main-slide .slide img:first-child, .main-slide .slide img:nth-of-type(3){
     display: none;
 }
-.main-slide .slide img:nth-child(2){
+.main-slide .slide img:nth-child(3){
     display: block; 
     width: 100%;
 }
@@ -272,30 +272,10 @@ header h1 a{
     height: 380px;
     background: #f5f5f5;
 }
-.video .wrap{
-    position: relative;
+.video .wrap {
+    height: auto;
 }
-.video .wrap iframe{
-    position: absolute; 
-    width: 300px; 
-    height: 200px; 
-    top: 50%; 
-    left: 50%; 
-    margin: -100px 0 0 -150px;
-}
-.video .wrap .videop{
-    display: none;
-}
-.video .wrap .mvideop{
-    display: block;
-}
-.video .wrap .pcvideo{
-    display: none;
-}
-.video .wrap .movideo{
-    display: block;
-    padding-bottom: 50px;
-}
+
 .video .wrap p{
     position: absolute;
     top: 40px; 
